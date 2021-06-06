@@ -1,0 +1,21 @@
+{
+  "name": "irc",
+  "version": "1.0.0",
+  "main": "browser.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start http://localhost:8080/ && nodemon --experimental-modules server.js localhost 8080",
+    "serv": "nodemon --experimental-modules server.js localhost 8080"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "nodemon": "^2.0.7",
+    "querystring": "^0.2.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
