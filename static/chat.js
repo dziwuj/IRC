@@ -80,7 +80,7 @@ function SubscribePane(elem, url) {
         await subscribe();
       } else if (res.status == 503) {
         // Show Error
-        showMessage(res.statusText);
+        // showMessage(res.statusText);
         console.log("Heroku się sra bo request 30s+ =>" + res.statusText);
         // Reconnect in one second
         await new Promise(resolve => setTimeout(resolve, 1000));
